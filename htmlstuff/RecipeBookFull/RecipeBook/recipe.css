@@ -1,0 +1,116 @@
+body {
+  font-family: arial, helvetica;
+  background: url(../RecipeBook/images/food1.jpg) no-repeat;
+	background-size: cover;
+	background-attachment:fixed;
+}
+
+
+.middlesection {
+margin-left: 15%;
+margin-right: 15%;
+margin-top: 7%;
+padding: 5px;
+outline-color: black;
+background-color: #FFF9D8;
+border: solid #6AC950 5px;
+border-radius: 10px;
+}
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+.nav2 {
+  float: left;
+  border-right: 1px solid grey;
+  width: 33.22%;
+}
+
+li:last-child {
+  border-right: none
+}
+
+.nav3, .dropbtn {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.nav3:hover, .dropdown:hover .dropbtn {
+  background-color: #6AC950;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.active {
+  background-color: #6AC950;
+}
+
+.image {
+  float: right;
+  border: 5px solid black;
+  margin: 6px;
+  width: 30%;
+}
+
+iframe {
+  text-align: center;
+  width: 100%;
+}
+
+.citations {
+  color: #6AC950;
+}
+
+.citations:hover {
+  background-color: #CBC9D5;
+}
+
+.homepage {
+  font-size: large;
+}
+
+.hpi1 {
+  width: 48%;
+  margin: 6px;
+  float: left;
+  height: 200px;
+}
+
+.hpi2 {
+  width: 48%;
+  margin: 6px;
+  float: right;
+  height: 200px;
+}

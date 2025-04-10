@@ -1,0 +1,38 @@
+body {
+  background-image: linear-gradient(lightblue, blue, purple, violet, pink);
+}
+
+h1 {
+  font-family: arial;
+}
+
+.para1 {
+  color:white;
+  font-family: arial;
+}
+
+.para2 {
+  color:black;
+  font-family: arial;
+}
+
+ul {
+  color:white;
+  font-family: arial;
+}
+
+.li1 {
+  color:white;
+  font-family: arial;
+}
+
+ol {
+  color:black;
+  font-family: arial;
+}
+
+
+.li2 {
+  color:black;
+  font-family: arial;
+}
