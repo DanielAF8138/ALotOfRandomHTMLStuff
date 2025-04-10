@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.horizontal {
+    flex-direction: row;
+}
+
+.vertical {
+    flex-direction: column;     
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Broken JavaScript</title>
+</head>
+
+<body>
+  <header>
+    <h1>JavaScript Debugging</h1>
+  </header>
+  <script>
+    let seasons = [ 'Spring', 'Summer', 'Fall', 'Winter' ];
+    let months = [ 'Mar - May', 'Jun - Aug', 'Sep - Nov', 'Dec - Feb' ];
+  </script>
+
+  <main>
+    <section>
+      <h2>Seasons and their Months</h2>
+      <table>
+      <script>
+        // Print each of the seasons as table headers
+        document.write('<thead><tr>');
+        for (let season of seasons) {
+          document.write('<th>' + season + '<\/th>')
+        }
+        document.write('<\/tr><\/thead>');
+
+        // Print each of the corresponding month range
+        document.write('<tbody><tr>');
+        for (let month of months) {
+          document.write('<td>' + month + '<\/td>')
+        }
+        document.write('<\/tr><\/tbody>');
+      </script>
+      </table>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Months in the Fall Semester</h2>
+      <script>
+        months = [ 'Aug', 'Sep', 'Oct', 'Nov', 'Dec' ];
+
+        // Use a loop to create an unordered list of the months in the array
+        document.write('<ul>');
+        for (let month of months) {
+          document.write('<li>' + month + '</li>')
+        }
+        document.write('</ul>')
+      </script>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>First CS 343 Labs</h2>
+      <script>
+        /**
+         * Given an object with a title and due field, return a list item
+         * as a string that can be written.
+         */
+        function buildLabItem(it) {
+          let item = '<li>';
+          item += it.title;
+          item += ' - ';
+          item += it.due;
+          return item;
+        }
+
+
+        // Use the function above to create an unordered list of the following objects.
+        let lab1 = { title: 'Lab 1: Introduction', due: 'August 27' };
+        let lab2 = { title: 'Lab 2: Document Structure', due: 'September 3' };
+        let lab3 = { title: 'Lab 3: Debugging', due: 'September 10' };
+
+        document.write('<ul>');
+        item = buildLabItem(lab1);
+        document.write(item);
+
+        item = buildLabItem(lab2);
+        document.write(item);
+
+        item = buildLabItem(lab3);
+        document.write(item);
+        document.write('</ul>');
+      </script>
+    </section>
+  </main>
+</body>
+</html>

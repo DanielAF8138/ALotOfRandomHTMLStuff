@@ -1,0 +1,43 @@
+/* Style for Quokkalot */
+
+/* placeholder to help you ensure the page is referring to the css file correctly */
+
+
+
+/* The _main_ text has a width of 50rem. */
+main {
+  width: 50rem;
+  
+}
+/* the _figures_ have a width of 43rem. */
+figure {
+  width: 43rem;
+}
+/* The main text and figures are centered horizontally in the page. */
+main {
+  margin-left: 18%;
+  margin-right: 20%;
+}
+/* The margin notes have a width of  12.5rem. */
+/* The margin notes are "anchored" against their _containing_ paragraphs. */
+/* The margin notes have a bg color of 🐑 (#BABABA 😂). */
+/* The margin notes have a text size of 0.75rem. */
+/* The gap between the main text and the margin notes is 1rem. */
+span {
+  display: block;
+  position: absolute;
+  width: 12.5rem;
+  font-size: 0.75rem;
+  background: #BABABA;
+  top: 0;
+  left: 54rem;
+  padding: 0.5rem;
+}
+
+p {
+  position: relative;
+}
+/* Captions for the images should have a text size of 0.5rem. */
+figcaption {
+  font-size: 0.5rem;
+}

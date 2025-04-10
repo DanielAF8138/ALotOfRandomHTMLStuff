@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iffy</title>
+    <link rel="icon" href="https://fav.farm/🔥">
+</head>
+<body>
+   <main>
+    <h1>Iffy</h1>
+    <script>
+        console.log("hello?")
+        console.log(window.location.host)
+        const onGithub = (window.location.host.includes("github.io"))
+        console.log(onGithub)
+        if (onGithub) {
+            document.write('<img src="https://picsum.photos/id/200/200/300" alt="image displayed because ON github pages">')
+        } else {
+            document.write('<img src="https://picsum.photos/id/343/200/300" alt="image displayed because not github pages">')
+        }
+    </script>
+   </main> 
+</body>
+</html>

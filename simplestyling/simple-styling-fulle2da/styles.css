@@ -1,0 +1,93 @@
+/* Add your CSS style definitions to this file */
+body {
+    background-color: #f9f9f9;
+    margin-top: 0em;
+    margin-left: 4em;
+    margin-right: 4em;
+    margin-bottom: 0em;
+}
+h1 {
+    font: 2rem Roboto Slab;
+    color: #9f2042;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0.1em;
+}
+
+article {
+    background-color: white;
+}
+
+article p, blockquote {
+    margin-left: 3em;
+    margin-right: 3em;
+    background-color: #f9f9f9;
+}
+
+
+p {
+    font: 0.9rem Open Sans;
+}
+
+#details {
+    font: 1.25rem Open Sans;
+    text-align: center;
+    color: #a9a9ba;
+
+}
+
+#buttons {
+    font: 1.25rem Open Sans;
+    color: #9f2042;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+}
+
+#buttons a:first-child {
+    border: 2px solid #ececec;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+#buttons a:nth-child(2) {
+    border: 2px solid #ececec;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+blockquote {
+    font: 1.25rem Roboto Slab;
+    text-align: center;
+    border: 0.1em solid #ececec;
+    padding: 0.7em;
+}
+
+img {
+    width: 100%
+}
+
+footer {
+    background-color: #29293a;
+    color: #FFFFFF;
+    padding: 1.5em;
+    margin-top: 1.75em;
+}
+
+footer p {
+    background-color: #29293a;
+}
+
+
+a {
+    color: #9f2042;
+    font: 0.9rem Open Sans;
+}
+
+#buttons a:hover {
+    color: #9f2042;
+    background: #a9a9a9
+}
+
+
+
