@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fone fog</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <p>Enter Map Dimensions:</p>
+    <form action="#" id="input">
+        <input type="text" name="height" id="mapHeight" placeholder="height">
+        <input type="text" name="width" id ="mapWidth" placeholder="width">
+        <button type="submit" value="refresh">Refresh</button>
+        
+    </form>
+
+    <div id="gridContainer">
+
+    </div>
+
+    <form action="#" id="save">
+        <button type="submit" value="save">Save as:</button>
+        <input type="text" name="savename" id="savename" placeholder="Room Name">
+    </form>
+
+    <form action="#" id="load">
+        <button type="submit" value="load">Load Room:</button>
+        <input type="text" name="loadroom" id="loadroom" placeholder="Room Number">
+    </form>
+
+    <ol id="roomList">
+
+    </ol>
+
+
+
+    <script src="script.js"></script> 
+</body>
+</html>

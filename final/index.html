@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FinalExam</title>
+</head>
+
+<body>
+    <h1>343 Final</h1>
+    <form id="start">
+        <input type="submit" value="Begin" >
+    </form>
+
+    <ol id="result">
+
+    </ol>
+    
+
+    <script>
+        document.getElementById('start').addEventListener('submit', function(event) {
+            event.preventDefault();
+            fetch(`https://w3.cs.jmu.edu/stewarmc/343/tmp/fetching/courses.json`)
+            .then(response => response.json())
+            .then(data => {
+            console.log(data)
+            var result = document.getElementById("result");
+            data.forEach(item => {
+                console.log(item);
+
+                var h2 = document.createElement('h2');
+                h2.appendChild(document.createTextNode(item.title));
+
+                var figure = document.createElement('figure');
+                var img = document.createElement("img");
+                img.src = `https://picsum.photos/id/${item.number + 1}/200/200`
+                var caption = document.createElement('figcaption');
+                caption.appendChild(document.createTextNode(`Thanks to picsum: https://picsum.photos/id/${item.number + 1}/200/200`))
+                figure.appendChild(img);
+                figure.appendChild(caption);
+
+                var dl = document.createElement('dl');
+                var dt1 = document.createElement('dt');
+                var dd1 = document.createElement('dd');
+                var dt2 = document.createElement('dt');
+                var dd2 = document.createElement('dd');
+                var dt3 = document.createElement('dt');
+                var dd3 = document.createElement('dd');
+
+                dt1.appendChild(document.createTextNode("id"))
+                dd1.appendChild(document.createTextNode(item.id))
+                dt2.appendChild(document.createTextNode("dept"))
+                dd2.appendChild(document.createTextNode(item.dept))
+                dt3.appendChild(document.createTextNode("tags"))
+                var ul = document.createElement("ul");
+                item.tags.forEach(item => {
+                    var li = document.createElement("li");
+                    li.appendChild(document.createTextNode(item));
+                    ul.appendChild(li);
+                })
+                dd3.appendChild(ul);
+
+                dl.appendChild(dt1);
+                dl.appendChild(dd1);
+                dl.appendChild(dt2);
+                dl.appendChild(dd2);
+                dl.appendChild(dt3);
+                dl.appendChild(dd3);
+
+                var li = document.createElement('li');
+                li.appendChild(h2);
+                li.appendChild(figure);
+                li.appendChild(dl);
+                result.appendChild(li);
+            }); {
+            }
+            })
+            .catch(error => console.error('Error:', error));
+        });
+    </script>
+
+    <style>
+        body {
+            color: #450084;
+        }
+
+        @media (max-width: 500px) {
+            body {
+                background-color: #450084;
+                color: #8EE4D7;
+            }
+        }   
+    </style>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 40vh;
+}
+
+.img {
+    width: 20vh;
+    height: 20vh;
+}

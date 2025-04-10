@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex it</title>
+  <link rel="icon" href="https://fav.farm/💪">
+</head>
+<body>
+  <main>
+    <div class="center">
+      <img src="https://picsum.photos/id/237/75/75" alt="dawg">
+      <img src="https://picsum.photos/id/343/75/75" alt="whatever img has our course number">
+      <img src="https://picsum.photos/id/347/75/75" alt="whatever img has our course number for next semester">
+    </div>
+  </main>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .center {
+      display: flex;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      flex-direction: column;
+    }
+
+    .img {
+      width: 20vh;
+      height: 20vh;
+    }
+  </style>
+</body>
+</html>
